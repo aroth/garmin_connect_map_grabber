@@ -9,7 +9,7 @@ http.createServer( function( req, res ){
   proc1.addListener("exit", function( d1 ){
     sys.puts("done!");
     sys.print("Cropping map: ");
-    var proc2 = process.createChildProcess("convert", ["-crop", "640x420+370+247", activity_id + "-fullsize.png", activity_id + "-map.png"]);
+    var proc2 = process.createChildProcess("convert", ["-crop", "640x420+370+210", activity_id + "-fullsize.png", activity_id + "-map.png"]);
     proc2.addListener("exit", function( d2 ){
       sys.puts("done!");
       sys.print("Sending PNG to client: ")
