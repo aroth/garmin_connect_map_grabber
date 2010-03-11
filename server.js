@@ -1,5 +1,5 @@
 var sys = require('sys');
-var posix = require('posix');
+var posix = require('fs');
 var http = require('http');
 
 http.createServer( function( req, res ){
